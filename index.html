@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Velez - CV</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#perfil">Perfil</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#educacion">Educación</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="header">
+            <img src="assets/img/tu_foto.jpg" alt="Tu Foto" class="profile-img">
+            <h1>Daniel Velez</h1>
+            <p>Programador Junior</p>
+        </section>
+
+        <section id="perfil">
+            <h2>Perfil</h2>
+            <p>Gran motivación para seguir perfeccionando habilidades y crecer profesionalmente. Confío plenamente en mi capacidad de producir ideas interesantes para mejorar y optimizar procesos haciendo uso mis habilidades.</p>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Bogotá</p>
+            <p>Email: velezldaniel9910@gmail.com</p>
+            <p>Teléfono: 3205942680</p>
+        </section>
+
+        <section id="experiencia">
+            <h2>Experiencia Laboral</h2>
+            <div>
+                <h3>Americas BPS, Técnico en Automatización</h3>
+                <p>Nov 2024 - Actualidad</p>
+                <ul>
+                    <li>Descripción de tus responsabilidades actuales... (Añade detalles aquí)</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Americas BPS, Practicante en Innovación y Desarrollo</h3>
+                <p>NOV 2023 - ABR 2024</p>
+                <ul>
+                    <li>Desarrollo de requerimientos en sistemas embebidos</li>
+                    <li>Solución de incidencias</li>
+                    <li>Apoyo en desarrollo de servicios y consumos de APIs</li>
+                </ul>
+            </div>
+            <div>
+                <h3>GroupCos, Asesor Comercial</h3>
+                <p>NOV 2022 - ENE 2023</p>
+                <ul>
+                    <li>Labores en atención al cliente en facturación y ajustes de factura.</li>
+                    <li>Soporte básico de servicios hogar y línea móvil</li>
+                    <li>Acompañamiento en Peticiones, Quejas y Reclamos.</li>
+                </ul>
+            </div>
+            <div>
+                <h3>PGD, Auxiliar de Archivo y Bodega</h3>
+                <p>JUL 2022 - SEP 2022</p>
+                <ul>
+                    <li>Asistente en procesos de ordenación, conteo y reparación de archivo.</li>
+                    <li>Cargue y descargue del producto final.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="educacion">
+            <h2>Educación</h2>
+            <p>Ingeniería de Software, Universidad Manuela Beltran, Cursando actualmente octavo semestre.</p>
+            <p>Básica primaria, secundaria y bachillerato, Colegio Lazarillo de Tormes.</p>
+        </section>
+
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>Uso de diversos entornos de programación y lenguajes</li>
+                <li>Facilidad en aprendizaje en nuevas competencias</li>
+                <li>Conocimientos en lógica de programación en lenguajes como Javascript, Python y Java</li>
+                <li>Conocimiento en redes LAN, WAN, Routing, Switching</li>
+                <li>Manejo bases de datos relacionales en lenguajes SQL</li>
+                <li>Conocimiento de bases de datos no relacionales</li>
+                <li>Desarrollo Front End HTML y CSS</li>
+            </ul>
+        </section>
+
+        <section id="cursos">
+            <h2>Cursos</h2>
+            <ul>
+                <li>CCNAv7: Introducción a Redes / Universidad Manuel Beltran</li>
+                <li>CCNAv7: Switching, Routing and Wireless Essentials</li>
+                <li>Programación Front End en HTML5 y CSS3 / Alura Latam</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Daniel Velez</p>
+    </footer>
+
+    <script>
+        // Opcional: Scroll suave
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
