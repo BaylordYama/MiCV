@@ -80,21 +80,17 @@ header nav a.active-link {
     max-width: 600px; 
 }
 
-/* Ajustes para la foto de perfil */
+/* Estilos para la foto de perfil */
 #header-intro .profile-img {
     border-radius: 50%; /* Mantiene la forma circular */
     width: 170px; 
     height: 170px;
-    object-fit: cover; /* Asegura que la imagen cubra el espacio sin distorsionarse. 
-                           Si la imagen original es pequeña o no es cuadrada, esto podría recortar partes.
-                           Asegúrate de que tu rostro esté bien centrado en la imagen original. */
+    object-fit: cover; /* Asegura que la imagen cubra el espacio sin distorsionarse. */
+                       /* Es crucial que la imagen original ('Mi_foto.jpeg') tenga buena resolución y el sujeto centrado. */
     display: block;
-    margin: 0 auto 25px; /* Aumentado el margen inferior un poco */
-    border: 4px solid #2aa8d9; /* Borde un poco más delgado y un tono de azul ligeramente diferente */
-    box-shadow: 0 4px 15px rgba(42, 168, 217, 0.25); /* Sombra más suave */
-    /* IMPORTANTE: Para la mejor calidad, asegúrate de que la imagen original 'Mi_foto.jpeg' 
-       tenga una buena resolución (idealmente al menos 300x300 píxeles) y que el sujeto principal (tu rostro)
-       esté bien centrado para evitar recortes no deseados por 'object-fit: cover'. */
+    margin: 0 auto 25px; 
+    border: 4px solid #2aa8d9; 
+    box-shadow: 0 4px 15px rgba(42, 168, 217, 0.25); 
 }
 
 #header-intro h1 {
@@ -278,7 +274,7 @@ footer p {
      #header-intro .profile-img {
         width: 120px;
         height: 120px;
-        margin-bottom: 20px; /* Ajuste de margen para móviles */
+        margin-bottom: 20px; 
     }
 
     .content-container {
@@ -296,7 +292,7 @@ footer p {
     .content-container section h2 {
         font-size: 1.7rem;
     }
-    #experiencia .job h3, #cursos .certification-group h3 { /* Asegurando que el h3 también se ajuste */
+    #experiencia .job h3, #cursos .certification-group h3 { 
         font-size: 1.2rem;
     }
     #habilidades ul {
