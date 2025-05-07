@@ -2,122 +2,257 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="CV Daniel Velez" content="Esta paguina es para mostrar el portafolio de Daniel Velez, initial-scale=1.0">
-    <title>Daniel Velez - CV</title>
+    <title>Daniel Velez - Portafolio Programador Junior en Bogotá</title>
+    <meta name="description" content="Portafolio profesional de Daniel Velez, programador junior con experiencia en desarrollo web, automatización y tecnologías como JavaScript, Python y Java. Conoce mis proyectos, experiencia y habilidades en Bogotá.">
+    <meta name="keywords" content="daniel velez, portafolio, programador junior, desarrollador web, bogota, javascript, python, java, html, css, frontend, backend, automatizacion, ingeniero de software">
+    <meta name="author" content="Daniel Velez">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta property="og:title" content="Daniel Velez - Portafolio Programador Junior">
+    <meta property="og:description" content="Explora el portafolio de Daniel Velez, programador junior.">
+    <meta property="og:image" content="assets/Mi foto.jpeg"> <meta property="og:url" content="URL_DE_TU_SITIO_DESPLEGADO"> <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Daniel Velez - Portafolio Programador Junior">
+    <meta name="twitter:description" content="Explora el portafolio de Daniel Velez, programador junior.">
+    <meta name="twitter:image" content="assets/Mi foto.jpeg"> <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfilePage",
+      "mainEntity": {
+        "@type": "Person",
+        "name": "Daniel Velez",
+        "alternateName": "Daniel Alberto Velez Levete",
+        "jobTitle": "Programador Junior",
+        "image": "assets/Mi foto.jpeg", // URL absoluta cuando esté desplegado
+        "sameAs": [
+          // "URL_DE_TU_LINKEDIN", // Ejemplo
+          // "URL_DE_TU_GITHUB"   // Ejemplo
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Bogotá",
+          "addressCountry": "CO"
+        },
+        "email": "mailto:velezldaniel9910@gmail.com",
+        "telephone": "+573205942680",
+        "knowsAbout": ["JavaScript", "Python", "Java", "HTML", "CSS", "Automatización RPA", "Desarrollo Web", "SQL", "Bases de Datos No Relacionales", "Redes de Computadoras"]
+      },
+      "description": "Portafolio profesional de Daniel Velez, un programador junior ubicado en Bogotá, mostrando habilidades, experiencia y proyectos.",
+      "url": "URL_DE_TU_SITIO_DESPLEGADO" // Reemplaza con la URL final de tu sitio
+    }
+    </script>
 </head>
 <body>
 
     <header>
         <nav>
             <ul>
+                <li><a href="#header-intro">Inicio</a></li>
                 <li><a href="#perfil">Perfil</a></li>
                 <li><a href="#experiencia">Experiencia</a></li>
                 <li><a href="#educacion">Educación</a></li>
                 <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#cursos">Certificaciones</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section id="header">
-            <img src="assets/img/tu_foto.jpg" alt="Tu Foto" class="profile-img">
-            <h1>Daniel Velez</h1>
-            <p>Programador Junior</p>
-        </section>
+    <div class="main-content-wrapper"> 
+        <main>
+            <section id="header-intro" class="parallax-section">
+                <div class="parallax-content">
+                    <img src="assets/Mi foto.jpeg" alt="Foto de perfil de Daniel Velez, programador junior" class="profile-img" loading="eager"> <h1>Daniel Velez</h1>
+                    <p class="subtitle">Programador Junior</p>
+                </div>
+            </section>
 
-        <section id="perfil">
-            <h2>Perfil</h2>
-            <p>Gran motivación para seguir perfeccionando habilidades y crecer profesionalmente. Confío plenamente en mi capacidad de producir ideas interesantes para mejorar y optimizar procesos haciendo uso mis habilidades.</p>
-        </section>
+            <div class="content-container"> 
+                <section id="perfil">
+                    <h2>Perfil Profesional</h2>
+                    <p>Gran motivación para seguir perfeccionando habilidades y crecer profesionalmente. Confío plenamente en mi capacidad de producir ideas interesantes para mejorar y optimizar procesos haciendo uso mis habilidades.</p>
+                </section>
 
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <p>Bogotá</p>
-            <p>Email: velezldaniel9910@gmail.com</p>
-            <p>Teléfono: 3205942680</p>
-        </section>
+                <section id="experiencia">
+                    <h2>Experiencia Laboral</h2>
+                    <div class="job">
+                        <h3>Americas BPS, Técnico en Automatización</h3>
+                        <p class="date">Mayo 2024 - Actualidad</p>
+                        <ul>
+                            <li>Desarrollo y mantenimiento de scripts de automatización para procesos de negocio.</li>
+                            <li>Identificación de oportunidades de automatización y propuesta de soluciones.</li>
+                            <li>Colaboración con equipos multidisciplinarios para la implementación de RPA.</li>
+                            <li>Monitoreo y optimización de robots existentes.</li>
+                        </ul>
+                    </div>
+                    <div class="job">
+                        <h3>Americas BPS, Practicante en Innovación y Desarrollo</h3>
+                        <p class="date">Noviembre 2023 - Abril 2024</p>
+                        <ul>
+                            <li>Desarrollo de requerimientos en sistemas embebidos.</li>
+                            <li>Solución de incidencias y debugging de aplicaciones.</li>
+                            <li>Apoyo en desarrollo de servicios RESTful y consumos de APIs.</li>
+                            <li>Participación en el ciclo de vida completo del desarrollo de software.</li>
+                        </ul>
+                    </div>
+                    <div class="job">
+                        <h3>GroupCos, Asesor Comercial</h3>
+                        <p class="date">Noviembre 2022 - Enero 2023</p>
+                        <ul>
+                            <li>Labores en atención al cliente en facturación y ajustes de factura.</li>
+                            <li>Soporte básico de servicios hogar y línea móvil.</li>
+                            <li>Acompañamiento en Peticiones, Quejas y Reclamos (PQR).</li>
+                        </ul>
+                    </div>
+                    <div class="job">
+                        <h3>PGD, Auxiliar de Archivo y Bodega</h3>
+                        <p class="date">Julio 2022 - Septiembre 2022</p>
+                        <ul>
+                            <li>Asistente en procesos de ordenación, conteo y reparación de archivo.</li>
+                            <li>Cargue y descargue del producto final.</li>
+                            <li>Organización y mantenimiento de inventario en bodega.</li>
+                        </ul>
+                    </div>
+                </section>
 
-        <section id="experiencia">
-            <h2>Experiencia Laboral</h2>
-            <div>
-                <h3>Americas BPS, Técnico en Automatización</h3>
-                <p>Nov 2024 - Actualidad</p>
-                <ul>
-                    <li>Descripción de tus responsabilidades actuales... (Añade detalles aquí)</li>
-                </ul>
-            </div>
-            <div>
-                <h3>Americas BPS, Practicante en Innovación y Desarrollo</h3>
-                <p>NOV 2023 - ABR 2024</p>
-                <ul>
-                    <li>Desarrollo de requerimientos en sistemas embebidos</li>
-                    <li>Solución de incidencias</li>
-                    <li>Apoyo en desarrollo de servicios y consumos de APIs</li>
-                </ul>
-            </div>
-            <div>
-                <h3>GroupCos, Asesor Comercial</h3>
-                <p>NOV 2022 - ENE 2023</p>
-                <ul>
-                    <li>Labores en atención al cliente en facturación y ajustes de factura.</li>
-                    <li>Soporte básico de servicios hogar y línea móvil</li>
-                    <li>Acompañamiento en Peticiones, Quejas y Reclamos.</li>
-                </ul>
-            </div>
-            <div>
-                <h3>PGD, Auxiliar de Archivo y Bodega</h3>
-                <p>JUL 2022 - SEP 2022</p>
-                <ul>
-                    <li>Asistente en procesos de ordenación, conteo y reparación de archivo.</li>
-                    <li>Cargue y descargue del producto final.</li>
-                </ul>
-            </div>
-        </section>
+                <section id="educacion">
+                    <h2>Educación</h2>
+                    <p><strong>Ingeniería de Software</strong>, Universidad Manuela Beltrán, Cursando actualmente octavo semestre.</p>
+                    <p><strong>Básica primaria, secundaria y bachillerato</strong>, Colegio Lazarillo de Tormes.</p>
+                </section>
 
-        <section id="educacion">
-            <h2>Educación</h2>
-            <p>Ingeniería de Software, Universidad Manuela Beltran, Cursando actualmente octavo semestre.</p>
-            <p>Básica primaria, secundaria y bachillerato, Colegio Lazarillo de Tormes.</p>
-        </section>
+                <section id="habilidades">
+                    <h2>Habilidades Técnicas</h2>
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>SQL</li>
+                        <li>Bases de Datos Relacionales</li>
+                        <li>Bases de Datos No Relacionales</li>
+                        <li>Git & GitHub</li>
+                        <li>Redes LAN/WAN</li>
+                        <li>Routing & Switching</li>
+                        <li>Entornos de Desarrollo (IDEs)</li>
+                        <li>Metodologías Ágiles (Scrum)</li>
+                        <li>Resolución de Problemas</li>
+                        <li>Aprendizaje Rápido</li>
+                    </ul>
+                </section>
 
-        <section id="habilidades">
-            <h2>Habilidades</h2>
-            <ul>
-                <li>Uso de diversos entornos de programación y lenguajes</li>
-                <li>Facilidad en aprendizaje en nuevas competencias</li>
-                <li>Conocimientos en lógica de programación en lenguajes como Javascript, Python y Java</li>
-                <li>Conocimiento en redes LAN, WAN, Routing, Switching</li>
-                <li>Manejo bases de datos relacionales en lenguajes SQL</li>
-                <li>Conocimiento de bases de datos no relacionales</li>
-                <li>Desarrollo Front End HTML y CSS</li>
-            </ul>
-        </section>
+                <section id="cursos">
+                    <h2>Cursos y Certificaciones</h2>
+                    
+                    <div class="certification-group">
+                        <h4>Formación Alura Latam (HTML5 & CSS3)</h4>
+                        <ul>
+                            <li><a href="assets/Certificado - Alura - Cursos {1}.pdf" target="_blank" rel="noopener noreferrer">HTML5 y CSS3 parte 1: Mi primera página web</a></li>
+                            <li><a href="assets/Certificado - Alura - Cursos {2}.pdf" target="_blank" rel="noopener noreferrer">HTML5 y CSS3 parte 2: Posicionamiento, listas y navegación</a></li>
+                            <li><a href="assets/Certificado - Alura - Cursos {3}.pdf" target="_blank" rel="noopener noreferrer">HTML5 y CSS3 parte 3: Trabajando con formularios y tablas</a></li>
+                            <li><a href="assets/Certificado - Alura - Cursos {4}.pdf" target="_blank" rel="noopener noreferrer">HTML5 y CSS3 parte 4: Avanzando en CSS</a></li>
+                        </ul>
+                    </div>
 
-        <section id="cursos">
-            <h2>Cursos</h2>
-            <ul>
-                <li>CCNAv7: Introducción a Redes / Universidad Manuel Beltran</li>
-                <li>CCNAv7: Switching, Routing and Wireless Essentials</li>
-                <li>Programación Front End en HTML5 y CSS3 / Alura Latam</li>
-            </ul>
-        </section>
-    </main>
+                    <div class="certification-group">
+                        <h4>Certificaciones Cisco Networking Academy</h4>
+                        <ul>
+                            <li><a href="assets/Daniel AlbertoVelez Levete-CCNA - 1 - INFRA-certificate.pdf" target="_blank" rel="noopener noreferrer">CCNAv7: Introducción a Redes</a></li>
+                            <li><a href="assets/Daniel AlbertoVelez Levete-CCNA - 2- INFRA -certificate.pdf" target="_blank" rel="noopener noreferrer">CCNAv7: Switching, Routing and Wireless Essentials</a></li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <section id="contacto">
+                    <h2>Contacto</h2>
+                    <p>Bogotá, Colombia</p>
+                    <p><strong>Email:</strong> <a href="mailto:velezldaniel9910@gmail.com">velezldaniel9910@gmail.com</a></p>
+                    <p><strong>Teléfono:</strong> <a href="tel:+573205942680">+57 3205942680</a></p>
+                </section>
+            </div> 
+        </main>
+    </div> 
 
     <footer>
-        <p>&copy; 2024 Daniel Velez</p>
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> Daniel Velez. Todos los derechos reservados.</p>
+        </div>
     </footer>
 
     <script>
-        // Opcional: Scroll suave
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
+        // Script para el año actual en el footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Script para la animación de aparición de secciones al hacer scroll
+        const sectionsToAnimate = document.querySelectorAll('.content-container section'); 
+        const navLinks = document.querySelectorAll('header nav a');
+        const allSectionsForNav = document.querySelectorAll('main section'); 
+
+        const animationObserverOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.15
+        };
+
+        const sectionAnimator = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                } else {
+                     // entry.target.classList.remove('visible'); 
+                }
             });
+        }, animationObserverOptions);
+
+        sectionsToAnimate.forEach(section => {
+            sectionAnimator.observe(section);
+        });
+        
+        let headerHeight = 0;
+        const headerElement = document.querySelector('header');
+        if (headerElement) {
+            headerHeight = headerElement.offsetHeight;
+        }
+
+        const navObserverOptions = {
+            root: null,
+            rootMargin: `-${headerHeight}px 0px -${window.innerHeight - headerHeight - 150}px 0px`,
+            threshold: 0.01 
+        };
+
+        const navHighlighter = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    navLinks.forEach(link => {
+                        link.classList.remove('active-link');
+                        if (link.getAttribute('href').substring(1) === entry.target.id) {
+                            link.classList.add('active-link');
+                        }
+                    });
+                }
+            });
+        }, navObserverOptions);
+
+        allSectionsForNav.forEach(section => { 
+            navHighlighter.observe(section);
+        });
+
+        window.addEventListener('load', () => {
+            const headerIntroSection = document.getElementById('header-intro');
+            const homeLink = document.querySelector('header nav a[href="#header-intro"]');
+            
+            if (headerIntroSection && homeLink) {
+                const rect = headerIntroSection.getBoundingClientRect();
+                if (rect.top >= 0 && rect.top < window.innerHeight / 2) { 
+                    navLinks.forEach(link => link.classList.remove('active-link'));
+                    homeLink.classList.add('active-link');
+                }
+            }
         });
     </script>
 

@@ -1,140 +1,303 @@
-/* Estilos Generales */
-/* RESET (Opcional, pero Recomendable) */
-/*
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-*/
-
+/* Estilos Generales y Tema de Alto Contraste (Oscuro) */
 body {
-    font-family: sans-serif;
+    font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
+    line-height: 1.7; 
+    color: #e0e0e0; 
+    background-color: #121212; 
+    scroll-behavior: smooth;
 }
 
-header, main, footer {
-    padding: 20px;
+.container { 
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
+/* Header */
 header {
-    background-color: #e7e7e7;
+    background-color: #1f1f1f; 
+    padding: 18px 0; 
     text-align: center;
+    border-bottom: 1px solid #333333; 
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
 }
 
-nav ul {
+header nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
-nav ul li {
+header nav ul li {
     display: inline;
-    margin-right: 20px;
+    margin: 0 18px; 
 }
 
-nav a {
+header nav a {
     text-decoration: none;
-    color: #333;
+    color: #c0c0c0; 
     font-weight: bold;
+    font-size: 1rem;
     transition: color 0.3s ease;
 }
 
-nav a:hover {
-    color: #007bff;
+header nav a:hover,
+header nav a.active-link {
+    color: #33ccff; 
 }
 
-section {
+/* --- Estructura Principal y Parallax --- */
+.main-content-wrapper {
+    /* Wrapper for global effects if needed */
+}
+
+#header-intro.parallax-section {
+    /* Background image updated to use your local image */
+    /* Ensure 'images.jpeg' is in your 'assets/' folder */
+    background-image: url('../assets/images.jpeg'); /* Relative path from css/styles.css to assets/images.jpeg */
+    min-height: 85vh; 
+    background-attachment: fixed; /* Parallax magic */
+    background-position: center center; /* Center the image */
+    background-repeat: no-repeat;
+    background-size: cover; /* Cover the area, can crop but avoids distortion and helps with pixelation if the image is large enough */
+    position: relative; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff; 
+    padding: 40px 20px;
+    box-shadow: inset 0 0 0 2000px rgba(18, 18, 18, 0.55); /* Dark overlay for text legibility, slightly darker */
+}
+
+#header-intro .parallax-content {
+    background-color: rgba(0, 0, 0, 0.35); 
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 600px; 
+}
+
+#header-intro .profile-img {
+    border-radius: 50%;
+    width: 170px; 
+    height: 170px;
+    object-fit: cover; /* Ensure the image covers without distortion */
+    display: block;
+    margin: 0 auto 20px;
+    border: 5px solid #33ccff; 
+    box-shadow: 0 6px 20px rgba(51, 204, 255, 0.3); 
+}
+
+#header-intro h1 {
+    color: #ffffff; 
+    margin-bottom: 8px;
+    font-size: 2.8rem; 
+    font-weight: 700;
+}
+
+#header-intro .subtitle { 
+    color: #e0e0e0; 
+    font-size: 1.3rem;
+    margin-bottom: 0;
+}
+
+/* Container for the rest of the sections (non-parallax) */
+.content-container {
+    max-width: 900px;
+    margin: 0 auto; 
+    padding: 40px 20px; 
+}
+
+/* General Section Styles (for content after parallax) */
+.content-container section {
+    margin-bottom: 45px;
+    background-color: #1e1e1e; 
+    padding: 35px;
+    border-radius: 10px; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.content-container section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.content-container section h2 {
+    color: #33ccff; 
+    margin-top: 0;
     margin-bottom: 30px;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h1, h2, h3 {
-    color: #007bff;
-    margin-bottom: 10px;
+    border-bottom: 2px solid #33aaff; 
+    padding-bottom: 12px;
+    font-size: 2rem; 
 }
 
 ul, ol {
     padding-left: 20px;
 }
 
-/* Imagen de Perfil */
-.profile-img {
-    border-radius: 50%;
-    max-width: 150px;
-    display: block;
-    margin: 0 auto 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ul li {
+    margin-bottom: 10px; 
 }
 
-/* Estilos de Experiencia Laboral */
-#experiencia div {
-    margin-bottom: 20px;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+/* Work Experience */
+#experiencia .job {
+    margin-bottom: 30px;
+    padding: 25px;
+    border: 1px solid #333333;
+    border-left: 5px solid #33ccff; 
+    border-radius: 8px;
+    background-color: #252525; 
 }
 
-#experiencia h3 {
-    margin-bottom: 5px;
+#experiencia .job h3 {
+    color: #add8e6; 
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
 }
 
-#experiencia p {
+#experiencia .job .date {
     font-size: 0.9em;
-    color: #666;
+    color: #a0a0a0; 
+    margin-bottom: 12px;
+    font-style: italic;
+}
+
+/* Courses and Certifications */
+#cursos .certification-group {
+    margin-bottom: 30px;
+}
+
+#cursos .certification-group h4 {
+    color: #add8e6; 
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+    border-bottom: 1px dashed #444;
+    padding-bottom: 8px;
+}
+
+#cursos ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#cursos ul li a {
+    text-decoration: none;
+    color: #87cefa; 
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+#cursos ul li a:hover {
+    color: #33ccff; 
+    text-decoration: underline;
+}
+
+/* Contact */
+#contacto p {
+    margin-bottom: 12px;
+    font-size: 1.05rem; 
+}
+#contacto a {
+    color: #87cefa; 
+    text-decoration: none;
+}
+#contacto a:hover {
+    color: #33ccff;
+    text-decoration: underline;
+}
+
+/* Skills */
+#habilidades ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px; 
+}
+#habilidades li {
+    background-color: #2a2a2a; 
+    color: #d0d0d0; 
+    padding: 10px 18px; 
+    border-radius: 25px;
+    font-size: 0.95rem;
+    border: 1px solid #444; 
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease, border-color 0.3s ease;
+}
+#habilidades li:hover {
+    background-color: #33ccff;
+    color: #121212; 
+    transform: translateY(-2px);
+    border-color: #33ccff;
 }
 
 /* Footer */
 footer {
     text-align: center;
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    border-radius: 0 0 8px 8px;
+    background-color: #1f1f1f; 
+    color: #a0a0a0; 
+    padding: 30px 0;
+    margin-top: 40px;
+    border-top: 1px solid #333333;
+}
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
 }
 
-/* Estilos Responsive */
+/* Responsive Styles */
 @media screen and (max-width: 768px) {
     header {
-        padding: 10px;
+        padding: 15px 0;
+    }
+    
+    #header-intro.parallax-section {
+        min-height: 60vh; 
+        background-attachment: scroll; /* Disable fixed parallax on mobile if it causes issues */
+    }
+    #header-intro .parallax-content {
+        padding: 20px;
+    }
+    #header-intro h1 {
+        font-size: 2.2rem;
+    }
+    #header-intro .subtitle {
+        font-size: 1.1rem;
+    }
+     #header-intro .profile-img {
+        width: 120px;
+        height: 120px;
     }
 
-    nav ul {
-        text-align: center;
+    .content-container {
+        padding: 20px 15px;
     }
 
-    nav ul li {
+    header nav ul li {
         display: block;
-        margin: 10px 0;
+        margin: 12px 0;
     }
 
-    section {
-        padding: 15px;
-        margin-bottom: 20px;
+    .content-container section {
+        padding: 25px; 
     }
-
-    .profile-img {
-        max-width: 120px;
+    .content-container section h2 {
+        font-size: 1.7rem;
+    }
+    #experiencia .job h3, #cursos .certification-group h4 {
+        font-size: 1.2rem;
+    }
+    #habilidades ul {
+        justify-content: center;
+    }
+    #habilidades li {
+        padding: 8px 15px;
     }
 }
-
-/* Animaciones */
-/* COMENTA ESTO TEMPORALMENTE PARA VER SI ES EL PROBLEMA */
-/*
-section {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-section.active {
-    opacity: 1;
-    transform: translateY(0);
-}
-*/
