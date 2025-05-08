@@ -1,0 +1,6 @@
+# Allow all web crawlers to access all content
+User-agent: *
+Allow: /
+
+# Sitemap location (actualiza la URL a tu dominio final)
+Sitemap: https://effulgent-meerkat-b4c48b.netlify.app/sitemap.xml
