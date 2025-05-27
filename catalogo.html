@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TZ8B7V3L');</script>
+    <title>Catálogo de Productos - Daniel Velez Portafolio</title>
+    <meta name="description" content="Explora nuestro catálogo de productos recomendados y de ejemplo en pesos colombianos (COP). Encuentra enlaces a tiendas externas.">
+    <meta name="keywords" content="catalogo, productos, tienda, recomendaciones, daniel velez, portafolio, cop, pesos colombianos">
+    <meta name="author" content="Daniel Velez">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="canonical" href="https://danielvelez.netlify.app/catalogo.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css"> 
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Catálogo de Productos Recomendados",
+      "description": "Una selección de productos interesantes y recomendados por Daniel Velez, con precios en pesos colombianos (COP).",
+      "url": "https://danielvelez.netlify.app/catalogo.html",
+      "mainEntity": {
+        "@type": "ItemList",
+        "name": "Productos del Catálogo",
+        "description": "Lista de productos destacados.",
+        "itemListOrder": "https://schema.org/ItemListOrderAscending",
+        "numberOfItems": 0, 
+        "itemListElement": []
+      }
+    }
+    </script>
+</head>
+<body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TZ8B7V3L"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html#header-intro" class="nav-link" id="nav-link-inicio">Inicio</a></li>
+                <li><a href="index.html#perfil" class="nav-link" id="nav-link-perfil">Perfil</a></li>
+                <li><a href="index.html#experiencia" class="nav-link" id="nav-link-experiencia">Experiencia</a></li>
+                <li><a href="index.html#educacion" class="nav-link" id="nav-link-educacion">Educación</a></li>
+                <li><a href="index.html#habilidades" class="nav-link" id="nav-link-habilidades">Habilidades</a></li>
+                <li><a href="index.html#cursos" class="nav-link" id="nav-link-cursos">Certificaciones</a></li>
+                <li><a href="catalogo.html" class="nav-link active-link" id="nav-link-catalogo">Catálogo</a></li>
+                <li><a href="noticias.html" class="nav-link" id="nav-link-noticias">Noticias</a></li>
+                <li><a href="index.html#contacto" class="nav-link" id="nav-link-contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-content-wrapper">
+        <main class="page-main-content"> 
+            <section id="catalogo-productos" class="content-container page-section">
+                <h1 class="page-title">Catálogo de Productos</h1>
+                <p class="page-intro">Aquí encontrarás una selección de productos interesantes y herramientas que recomiendo. Los enlaces te dirigirán a tiendas externas donde puedes obtener más información o realizar una compra.</p>
+
+                <div id="product-grid-container" class="product-grid">
+                    <p id="loading-message">Cargando productos...</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> Daniel Velez. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/catalogo.js" defer></script> 
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        const currentCatalogNavLink = document.querySelector('header nav a[href="catalogo.html"]');
+        if (currentCatalogNavLink) {
+            document.querySelectorAll('header nav a.nav-link').forEach(link => link.classList.remove('active-link'));
+            currentCatalogNavLink.classList.add('active-link');
+        }
+    </script>
+</body>
+</html>

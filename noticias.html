@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TZ8B7V3L');</script>
+    <title>Noticias de Tecnología e IA - Daniel Velez</title>
+    <meta name="description" content="Últimas noticias y artículos sobre tecnología, inteligencia artificial, programación y desarrollo web. Mantente informado con Daniel Velez.">
+    <meta name="keywords" content="noticias, tecnologia, inteligencia artificial, ia, ai, programacion, desarrollo web, daniel velez">
+    <meta name="author" content="Daniel Velez">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="canonical" href="https://danielvelez.netlify.app/noticias.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css"> 
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage", 
+      "name": "Noticias de Tecnología e IA",
+      "url": "https://danielvelez.netlify.app/noticias.html",
+      "description": "Una colección de las últimas noticias y artículos sobre tecnología e inteligencia artificial.",
+      "publisher": {
+        "@type": "Person",
+        "name": "Daniel Velez"
+      }
+    }
+    </script>
+</head>
+<body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TZ8B7V3L"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html#header-intro" class="nav-link" id="nav-link-inicio">Inicio</a></li>
+                <li><a href="index.html#perfil" class="nav-link" id="nav-link-perfil">Perfil</a></li>
+                <li><a href="index.html#experiencia" class="nav-link" id="nav-link-experiencia">Experiencia</a></li>
+                <li><a href="index.html#educacion" class="nav-link" id="nav-link-educacion">Educación</a></li>
+                <li><a href="index.html#habilidades" class="nav-link" id="nav-link-habilidades">Habilidades</a></li>
+                <li><a href="index.html#cursos" class="nav-link" id="nav-link-cursos">Certificaciones</a></li>
+                <li><a href="catalogo.html" class="nav-link" id="nav-link-catalogo">Catálogo</a></li>
+                <li><a href="noticias.html" class="nav-link active-link" id="nav-link-noticias">Noticias</a></li> 
+                <li><a href="index.html#contacto" class="nav-link" id="nav-link-contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-content-wrapper">
+        <main class="page-main-content">
+            <section id="noticias-principal" class="content-container page-section">
+                <h1 class="page-title">Noticias de Tecnología e IA</h1>
+                <p class="page-intro">Mantente al día con una selección de las últimas noticias y artículos relevantes del mundo de la tecnología y la inteligencia artificial, presentadas a través de nuestra API de noticias.</p>
+
+                <div id="news-grid-container" class="news-grid">
+                    <p id="loading-news-message">Cargando noticias...</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> Daniel Velez. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/noticias.js" defer></script> 
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        const currentNewsNavLink = document.querySelector('header nav a[href="noticias.html"]');
+        if (currentNewsNavLink) {
+             document.querySelectorAll('header nav a.nav-link').forEach(link => link.classList.remove('active-link'));
+            currentNewsNavLink.classList.add('active-link');
+        }
+    </script>
+</body>
+</html>

@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemap location (actualiza la URL a tu dominio final)
-Sitemap: https://effulgent-meerkat-b4c48b.netlify.app/sitemap.xml
+Sitemap: https://danielvelez.netlify.app/sitemap.xml

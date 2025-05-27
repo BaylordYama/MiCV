@@ -1,0 +1,8 @@
+# netlify.toml
+
+[functions]
+  directory = "netlify/functions"
+
+# [build]
+#   command = "echo 'No build command needed'" 
+#   publish = "." 
