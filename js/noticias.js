@@ -4,12 +4,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const newsGridContainer = document.getElementById('news-grid-container');
     const loadingMessage = document.getElementById('loading-news-message');
     
-    const netlifyFunctionUrl = '/.netlify/functions/get-news'; 
+    // Cambiado para cargar desde un JSON local
+    const dataUrl = '../data/noticias_tecnologia.json'; 
 
-    fetch(netlifyFunctionUrl)
+    fetch(dataUrl)
         .then(response => {
             if (!response.ok) {
-                throw new Error(`Error al llamar a la API de noticias: ${response.status} ${response.statusText}`);
+                // Si hay un error al cargar el JSON local (ej. no encontrado), se mostrará aquí.
+                throw new Error(`Error al cargar el archivo de noticias: ${response.status} ${response.statusText}`);
             }
             return response.json();
         })
@@ -19,6 +21,8 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             if (newsItems && newsItems.length > 0) {
                 displayNews(newsItems);
+                // Opcional: Actualizar el JSON-LD de la página si es necesario
+                // updateNewsPageSchema(newsItems); 
             } else {
                 newsGridContainer.innerHTML = '<p>No hay noticias disponibles en este momento.</p>';
             }
@@ -41,19 +45,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
             let formattedDate = 'Fecha no disponible';
             try {
-                const dateObj = new Date(item.datePublished.includes('T') ? item.datePublished : item.datePublished + 'T00:00:00Z'); 
+                // Asegurarse que la fecha tenga un formato que el constructor Date entienda bien, como YYYY-MM-DD
+                // Si item.datePublished ya es YYYY-MM-DD, no necesita T00:00:00
+                const dateObj = new Date(item.datePublished.includes('T') ? item.datePublished : item.datePublished + 'T00:00:00Z'); // Añadir Z para UTC si no hay timezone
                 if (!isNaN(dateObj)) {
                     formattedDate = dateObj.toLocaleDateString('es-CO', { 
                         year: 'numeric', 
                         month: 'long', 
                         day: 'numeric',
-                        timeZone: 'America/Bogota' 
+                        timeZone: 'America/Bogota' // Opcional: asegurar zona horaria
                     });
                 }
             } catch(e) {
                 console.warn("Fecha inválida para la noticia:", item.headline, item.datePublished);
             }
             
+            // ID único para el botón de la noticia para GTM
             const buttonId = `news-button-${item.id || item.headline.toLowerCase().replace(/[^\w-]+/g, '-')}`; 
 
             newsCard.innerHTML = `
@@ -77,4 +84,30 @@ document.addEventListener('DOMContentLoaded', () => {
             newsGridContainer.appendChild(newsCard);
         });
     }
+
+    // Función opcional para actualizar el JSON-LD de la página de noticias con los artículos cargados
+    /*
+    function updateNewsPageSchema(newsItems) {
+        const scriptTag = document.querySelector('script[type="application/ld+json"]');
+        if (scriptTag) {
+            try {
+                const schemaData = JSON.parse(scriptTag.textContent);
+                if (schemaData['@type'] === 'CollectionPage') {
+                    schemaData.mainEntity = {
+                        "@type": "ItemList",
+                        "itemListElement": newsItems.map((item, index) => ({
+                            "@type": "ListItem",
+                            "position": index + 1,
+                            "url": item.originalUrl // O la URL de una página de detalle en tu sitio si la tuvieras
+                        }))
+                    };
+                    schemaData.numberOfItems = newsItems.length; // Si ItemList es mainEntity
+                    scriptTag.textContent = JSON.stringify(schemaData, null, 2);
+                }
+            } catch (e) {
+                console.error("Error updating News CollectionPage Schema.org JSON-LD:", e);
+            }
+        }
+    }
+    */
 });

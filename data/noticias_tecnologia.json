@@ -1,0 +1,47 @@
+[
+  {
+    "id": "noticia-real-001",
+    "headline": "NVIDIA presenta un chip para IA más económico para el mercado chino ante restricciones de EEUU",
+    "image": "https://placehold.co/800x450/1a1a1a/33ccff?text=NVIDIA+China",
+    "sourceName": "Xataka",
+    "datePublished": "2024-05-27",
+    "summary": "NVIDIA está adaptando su estrategia para el mercado chino con el desarrollo de un chip de inteligencia artificial más accesible, en respuesta a las restricciones impuestas por Estados Unidos a sus semiconductores de alta gama.",
+    "originalUrl": "https://www.xataka.com/empresas-y-economia/nvidia-lista-para-inundar-mercado-chino-su-arma-chip-para-ia-mucho-barato-que-su-h20-prohibido-eeuu"
+  },
+  {
+    "id": "noticia-real-002",
+    "headline": "OpenAI actualiza Operator con el modelo de razonamiento o3 para investigaciones en Internet",
+    "image": "https://placehold.co/800x450/1a1a1a/33ccff?text=OpenAI+o3",
+    "sourceName": "Infobae Tecnología",
+    "datePublished": "2024-05-24",
+    "summary": "OpenAI ha integrado su nuevo modelo de razonamiento, o3, en su agente Operator. Esta actualización está diseñada para optimizar tareas complejas en programación, ciencia y potenciar la eficacia en investigaciones online.",
+    "originalUrl": "https://www.infobae.com/tecno/2024/05/24/openai-actualiza-operator-con-el-modelo-de-razonamiento-o3-para-emprender-investigaciones-exhaustivas-en-internet/"
+  },
+  {
+    "id": "noticia-real-003",
+    "headline": "La IA recrea los rostros de esclavizados en Brasil del siglo XIX",
+    "image": "https://placehold.co/800x450/1a1a1a/33ccff?text=IA+Rostros+Brasil",
+    "sourceName": "El País (Tecnología)",
+    "datePublished": "2024-05-26",
+    "summary": "Una exposición en São Paulo utiliza inteligencia artificial para reconstruir visualmente los rostros de personas esclavizadas en Brasil, basándose en descripciones históricas de un abogado abolicionista del siglo XIX.",
+    "originalUrl": "https://elpais.com/america-futura/2024-05-26/la-inteligencia-artificial-recrea-los-rostros-de-esclavizados-en-brasil-gracias-a-las-descripciones-de-un-abolicionista.html"
+  },
+  {
+    "id": "noticia-real-004",
+    "headline": "Chatbots como terapeutas: los riesgos y beneficios de la psicología con IA",
+    "image": "https://placehold.co/800x450/1a1a1a/33ccff?text=IA+Psicologia",
+    "sourceName": "BBC News Mundo",
+    "datePublished": "2024-05-27",
+    "summary": "Se analiza el creciente uso de chatbots basados en inteligencia artificial como herramientas de apoyo terapéutico, explorando tanto los beneficios potenciales para la salud mental como los riesgos inherentes y las consideraciones éticas.",
+    "originalUrl": "https://www.bbc.com/mundo/articles/c4n17qdy8jlo"
+  },
+  {
+    "id": "noticia-real-005",
+    "headline": "El MIT anuncia una iniciativa para impulsar la nueva manufactura con IA",
+    "image": "https://placehold.co/800x450/1a1a1a/33ccff?text=MIT+IA+Manufactura",
+    "sourceName": "MIT News",
+    "datePublished": "2024-05-27",
+    "summary": "El Instituto Tecnológico de Massachusetts ha lanzado una iniciativa a nivel de instituto para fortalecer la industria y crear empleos mediante la innovación en sectores vitales de manufactura, con un fuerte enfoque en la inteligencia artificial.",
+    "originalUrl": "https://news.mit.edu/2024/mit-announces-initiative-new-manufacturing-0527"
+  }
+]
